@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Pola i obwody figur</title>
+</head>
+<body>
+    <script src="code.js"></script>
+    <div class="strona">   
+        <p>Wybierz figurę i wybierz czy chcesz liczć pole czy obwód.</p>
+        <br1><p>Następnie wciśnij przycisk "LICZ!" i podaj dane.</p>
+        
+        <br><select name="figury" id="figury">
+            <option value="">Wybierz figurę</option>
+            <option value="Kwadrat">Kwadrat</option>
+            <option value="Prostokat">Prostokąt</option>
+            <option value="Trojkat">Trójkąt</option>
+            <option value="Romb">Romb</option>
+            <option value="Trapez">Trapez</option>
+            <option value="Rownoleglobok">Równoległobok</option>
+            <option value="Kolo">Koło</option>
+        </select>
+        <select name="wybory" id="wybory">
+            <option value="">Wybierz co chcesz liczyć</option>
+            <option value="Obwod">Obwód</option>
+            <option value="Pole">Pole</option>
+        </select>
+        <br><button type="button" onclick="myFunction()">LICZ!</button>
+    </div>
+<p id="wypiszFigura"></p>
+<p id="wypiszObwod"></p>
+<p id="wypiszPole"></p>
+</body>
+</html>
